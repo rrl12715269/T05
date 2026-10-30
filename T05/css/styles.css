@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  background: #f4f6f8;
+  font-family: Arial, sans-serif;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.chart {
+  min-width: 0;
+  border: 1px solid #d5dbe1;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.file-origin-notice {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 12px 16px;
+  border-left: 4px solid #c78000;
+  background: #fff6df;
+  color: #463510;
+  font-size: 14px;
+}
+
+.file-origin-notice a {
+  color: #075f73;
+}
+
+#chart-2 {
+  padding: 16px;
+}
+
+#chart-1 {
+  padding: 16px;
+}
+
+#chart-3 {
+  padding: 16px;
+}
+
+#chart-4 {
+  padding: 16px;
+}
+
+.chart-title {
+  margin: 0 0 8px;
+  color: #263746;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.donut-chart {
+  display: block;
+  width: 100%;
+  max-height: 250px;
+  overflow: visible;
+}
+
+.donut-slice {
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+.donut-legend-label {
+  fill: #263746;
+  font-size: 13px;
+}
+
+.donut-legend-value {
+  fill: #667582;
+  font-size: 11px;
+}
+
+.line-chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.line-axis text {
+  fill: #52616d;
+  font-size: 11px;
+}
+
+.line-axis path,
+.line-axis line {
+  stroke: #aeb8c2;
+}
+
+.line-grid .domain {
+  display: none;
+}
+
+.line-grid .tick line {
+  stroke: #e5e9ed;
+}
+
+.line-series {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.line-legend-label {
+  fill: #354550;
+  font-size: 12px;
+}
+
+.line-legend-swatch {
+  fill: none;
+  stroke-width: 2.5;
+}
+
+.scatter-chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.scatter-axis text {
+  fill: #52616d;
+  font-size: 11px;
+}
+
+.scatter-axis path,
+.scatter-axis line {
+  stroke: #aeb8c2;
+}
+
+.scatter-grid .domain {
+  display: none;
+}
+
+.scatter-grid .tick line {
+  stroke: #e5e9ed;
+}
+
+.scatter-point {
+  stroke: #fff;
+  stroke-width: 1;
+  opacity: 0.78;
+}
+
+.scatter-axis-label {
+  fill: #354550;
+  font-size: 12px;
+}
+
+.bar-chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.bar-axis text {
+  fill: #52616d;
+  font-size: 11px;
+}
+
+.bar-axis path,
+.bar-axis line {
+  stroke: #aeb8c2;
+}
+
+.bar-grid .domain {
+  display: none;
+}
+
+.bar-grid .tick line {
+  stroke: #e5e9ed;
+}
+
+.bar-mark {
+  opacity: 0.88;
+}
+
+.bar-value {
+  fill: #354550;
+  font-size: 12px;
+  text-anchor: middle;
+}
+
+.bar-axis-label {
+  fill: #354550;
+  font-size: 12px;
+}
+
+.chart-error {
+  color: #a12622;
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 16px;
+  }
+
+  .chart-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

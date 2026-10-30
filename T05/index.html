@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Charts</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<main class="chart-grid">
+		<p id="file-origin-notice" class="file-origin-notice" hidden>
+			Chart data cannot load when this page is opened as a local file. Open the HTTP version instead:
+			<a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a>
+		</p>
+		<div id="chart-1" class="chart"></div>
+		<div id="chart-2" class="chart"></div>
+		<div id="chart-3" class="chart"></div>
+		<div id="chart-4" class="chart"></div>
+	</main>
+	<script>
+		if (window.location.protocol === "file:") {
+			document.getElementById("file-origin-notice").hidden = false;
+		}
+	</script>
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script src="load-data.js"></script>
+	<script src="charts/donut-charts.js"></script>
+	<script src="charts/line-chart.js"></script>
+	<script src="charts/scatter-chart.js"></script>
+	<script src="charts/bar-chart.js"></script>
+</body>
+</html>
